@@ -55,7 +55,7 @@ class RaiseCardPlugin(Plugin):
         return help_text
 
     def get_card_image_url(self, message):
-        api_url = "http://shanhe.kim/api/qq/ju2.php"
+        api_url = "https://api.suyanw.cn/api/zt.php"
         try:
             response = requests.get(api_url, params={"msg": message})
             response.raise_for_status()
